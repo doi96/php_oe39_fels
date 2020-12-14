@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><p>OE39 FELS</p></a>
+      <a class="navbar-brand" href="/home"><p>OE39 FELS</p></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,7 +25,12 @@
             <li><a class="dropdown-item" href="{!! route('change-language', ['vi']) !!}">@lang('user.vietname')</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="contact.html">Logout</a></li>
+        <li class="dropdown">
+          <a href="" id="btn_logout">@lang('user.logout')</a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+          </form>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->

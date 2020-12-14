@@ -1,7 +1,7 @@
 <div class="col-md-3 static">
     <div class="profile-card">
         <img src="{{ asset('img/user/user-1.jpg') }}" alt="user" class="profile-photo" />
-        <h5><a href="timeline.html" class="text-white">User name</a></h5>
+        <h5><a href="timeline.html" class="text-white">{{ Auth::user()->name }}</a></h5>
         <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 1,299 @lang('user.followers')</a>
     </div><!--profile card ends-->
     <ul class="nav-news-feed">

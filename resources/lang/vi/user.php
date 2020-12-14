@@ -1,5 +1,7 @@
 <?php
 return [
+    'welcome'=>'Chào mừng bạn tới với trang web chúng tôi',
+    'alert-login'=>'Vui lòng đăng nhập để học và theo dõi tài khoản của mình',
     'top_user' => 'Xếp hạng người dùng',
     'follow' => 'Theo dõi',
     'followers' => 'người theo dõi',
@@ -35,4 +37,8 @@ return [
     'logout' => 'Đăng xuất',
     'home' => 'Trang chủ',
     'register' => 'Tạo tài khoản',
+    'logout'=>'Đăng xuất',
+    'filed_email'=>'Địa chỉ email',
+    'remember_login'=>'Ghi nhớ mật khẩu',
+    'confirm_pass'=>'Xác thực mật khẩu'
 ];

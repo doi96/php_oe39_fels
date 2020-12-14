@@ -1,5 +1,7 @@
 <?php
 return [
+    'welcome'=>'Welcome to my website',
+    'alert-login'=>'Please login to learn and follow my account.',
     'top_user' => 'Top user',
     'follow' => 'Follow',
     'followers' => 'followers',
@@ -35,4 +37,8 @@ return [
     'logout' => 'Logout',
     'home' => 'Home',
     'register' => 'Register',
+    'logout'=>'Logout',
+    'filed_email'=>'E-Mail Address',
+    'remember_login'=>'Remember Me',
+    'confirm_pass'=>'Confirm Password'
 ];

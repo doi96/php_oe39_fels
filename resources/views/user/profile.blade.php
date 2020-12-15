@@ -3,14 +3,14 @@
 
     <div class="col-sm-8 col-md-7">
     <div class="thumbnail">
-    <img src="{{ asset('img/user/user-1.jpg') }}" alt="user">
+    <img src="{{ asset('img/user/'.$user->profile->avatar) }}" alt="user">
       <div class="caption">
         <h3>{{ $user->name }}</h3>
         <span class="label label-info">300 @lang('user.word_learned')</span>
         <span class="label label-primary">{{$follower->count()}} @lang('user.followers')</span>
         <span class="label label-success">{{$following->count()}} @lang('user.followings')</span>
         <p>Email: {{ $user->email }}</p>
-        <p><a href="#" class="btn btn-primary" role="button">@lang('user.edit_profile')</a> <a href="#" class="btn btn-default" role="button">Follow</a></p>
+        <p><a href="{{route('profile.edit',$user->id)}}" class="btn btn-primary" role="button">@lang('user.edit_profile')</a> <a href="#" class="btn btn-default" role="button">Follow</a></p>
       </div>
       <p>@lang('user.course_progress'):</p>
       <div class="progress">

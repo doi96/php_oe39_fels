@@ -45,5 +45,10 @@ return [
     'unlearned' => 'Chưa học',
     'word' => 'Từ',
     'course' => 'Khóa học',
-    'status' => 'Trạng thái'
+    'status' => 'Trạng thái',
+    'change_pass'=>'Đổi mật khẩu',
+    'old_password'=>'Mật khẩu cũ',
+    'male'=>'Nam',
+    'female'=>'Nữ',
+    'gender'=>'Giới tính',
 ];

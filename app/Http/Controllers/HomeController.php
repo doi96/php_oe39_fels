@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Followship;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $follower = Followship::where('follower_id','!=', Auth::user()->id)->get();
+        $following = Followship::where('follower_id', Auth::user()->id)->get();
+
+        return view('home')->with(compact('follower','following'));
     }
+
 }

@@ -8,5 +8,8 @@
             <a href="#" class="text-green">@lang('user.follow')</a>
             </div>
         </div>
+        <div class="follow-user">
+            <a href="{{ route('all-user') }}" class="text-green">@lang('user.all_user')</a>
+        </div>
     </div>
 </div>

@@ -4,6 +4,7 @@ return [
     'alert-login'=>'Vui lòng đăng nhập để học và theo dõi tài khoản của mình',
     'top_user' => 'Xếp hạng người dùng',
     'follow' => 'Theo dõi',
+    'unfollow' => 'Hủy theo dõi',
     'followers' => 'người theo dõi',
     'followings' => 'đang theo dõi',
     'word_learned' => 'Từ đã học',

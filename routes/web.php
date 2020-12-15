@@ -41,4 +41,9 @@ Route::group(['middleware' => 'localization'], function () {
 
     Route::get('list-all-word','WordController@index')->name('list-all-word');
     Route::match(['get','post'], 'word-filter', 'WordController@filter')->name('word-filter');
+
+    Route::group(['middleware' => 'guest'], function () {
+        Route::get('/sign-in/{social}', 'Auth\LoginController@socialLogin')->name('sign-in/social');
+        Route::get('/sign-in/{social}/redirect', 'Auth\LoginController@socialRedirect')->name('sign-in/social/redirect');
+    });
 });

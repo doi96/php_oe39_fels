@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $follower = Followship::where('follower_id','!=', Auth::user()->id)->get();
+        $follower = Followship::where('followed_id', Auth::user()->id)->get();
         $following = Followship::where('follower_id', Auth::user()->id)->get();
 
         return view('home')->with(compact('follower','following'));

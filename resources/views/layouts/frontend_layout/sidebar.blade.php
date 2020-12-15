@@ -1,6 +1,9 @@
 <div class="col-md-3 static">
     <div class="profile-card">
-        <img src="{{ asset('img/user/'.$userss->profile->avatar) }}" alt="user" class="profile-photo" />
+        @php
+            $avatar = isset($userss->profile->avatar) ? $userss->profile->avatar : '';
+        @endphp
+        <img src="{{ asset('img/user/'.$avatar) }}" alt="user" class="profile-photo" />
         <h5><a href="{{route('profile.index')}}" class="text-white">{{ Auth::user()->name }}</a></h5>
         <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> {{ $follower->count() }} @lang('user.followers')</a>
     </div><!--profile card ends-->

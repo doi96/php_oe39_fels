@@ -25,6 +25,10 @@ Route::group(['middleware' => 'localization'], function () {
         ]);
 
         Route::post('/updatepass','ProfileController@updatePasswordd')->name('update-password');
+
+        Route::get('/show/{course}', 'CourseController@show')->name('course.detail');
+        Route::post('/enroll/{course}/course', 'CourseController@enroll')->name('courses.enroll');
+        Route::post('/leave/{course}/course', 'CourseController@leave')->name('courses.leave');
     });
     Route::get('/', function () {
         return view('welcome');

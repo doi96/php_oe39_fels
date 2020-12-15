@@ -8,6 +8,12 @@ return [
             'password_error_diff' => 'New password cannot be the same as old password.',
             'password_not_match' => 'Current password not match.',
             'enter_name' => 'Enter your name',
+            'enrolled' => 'Enrolled',
+            'enroll' =>' Enroll',
+            'cancel_enroll' => 'Cancel Enroll',
+            'lesson' => 'All lessons',
+            'start_lesson' => 'Start',
+            'course_enroll' => 'Courses participated',
         ],
     ],
 ];

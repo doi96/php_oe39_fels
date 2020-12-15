@@ -40,5 +40,9 @@ return [
     'logout'=>'Logout',
     'filed_email'=>'E-Mail Address',
     'remember_login'=>'Remember Me',
-    'confirm_pass'=>'Confirm Password'
+    'confirm_pass'=>'Confirm Password',
+    'unlearned' => 'Unlearned',
+    'word' => 'Word',
+    'course' => 'Course',
+    'status' => 'Status'
 ];

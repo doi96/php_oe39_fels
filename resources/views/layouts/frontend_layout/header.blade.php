@@ -15,7 +15,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right main-menu">
-        <li class="dropdown"><a href="contact.html">@lang('user.all_word_list')</a></li>
+        <li class="dropdown"><a href="{{ route('list-all-word') }}">@lang('user.all_word_list')</a></li>
         <li class="dropdown"><a href="contact.html">@lang('user.all_course')</a></li>
         <li class="dropdown"><a href="contact.html">@lang('user.activity')</a></li>
         <li class="dropdown">

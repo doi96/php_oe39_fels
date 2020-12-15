@@ -40,5 +40,9 @@ return [
     'logout'=>'Đăng xuất',
     'filed_email'=>'Địa chỉ email',
     'remember_login'=>'Ghi nhớ mật khẩu',
-    'confirm_pass'=>'Xác thực mật khẩu'
+    'confirm_pass'=>'Xác thực mật khẩu',
+    'unlearned' => 'Chưa học',
+    'word' => 'Từ',
+    'course' => 'Khóa học',
+    'status' => 'Trạng thái'
 ];

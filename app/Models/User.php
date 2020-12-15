@@ -69,6 +69,6 @@ class User extends Authenticatable
 
     public function words()
     {
-        return $this->belongsToMany(Word::class, 'users_word', 'user_id', 'word_id');
+        return $this->belongsToMany(Word::class, 'users_word', 'user_id', 'word_id')->withPivot('status');
     }
 }

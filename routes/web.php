@@ -26,4 +26,6 @@ Route::group(['middleware' => 'localization'], function () {
     
     Route::get('change-language/{language}', 'ChangeLanguageController@changeLanguage')->name('change-language');
 
+    Route::get('list-all-word','WordController@index')->name('list-all-word');
+    Route::match(['get','post'], 'word-filter', 'WordController@filter')->name('word-filter');
 });

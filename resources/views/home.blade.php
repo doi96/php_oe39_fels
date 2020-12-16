@@ -1,6 +1,8 @@
 @extends('layouts.frontend_layout.master')
 @section('content')
-    
+
+ @include('layouts.frontend_layout.sidebar')
+
 <div class="col-md-7">
     <!-- Post Content
     ================================================= -->
@@ -25,5 +27,7 @@
         </div>
     </div>
 </div>
+
+@include('layouts.frontend_layout.top_user')
 
 @endsection

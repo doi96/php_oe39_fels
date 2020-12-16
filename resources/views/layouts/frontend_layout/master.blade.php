@@ -38,13 +38,11 @@
 
                 <!-- Newsfeed Common Side Bar Left
                 ================================================= -->
-                @include('layouts.frontend_layout.sidebar')
 
     	          @yield('content')
 
                 <!-- Top user Side Bar Right
                 ================================================= -->
-                @include('layouts.frontend_layout.top_user')
     		</div>
     	</div>
     </div>

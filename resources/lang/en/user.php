@@ -4,6 +4,7 @@ return [
     'alert-login'=>'Please login to learn and follow my account.',
     'top_user' => 'Top user',
     'follow' => 'Follow',
+    'unfollow' => 'Unfollow',
     'followers' => 'followers',
     'followings' => 'followings',
     'word_learned' => 'Word learned',

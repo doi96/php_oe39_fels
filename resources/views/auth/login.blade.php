@@ -53,9 +53,18 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info">
                                     @lang('user.login')
                                 </button>
+                                <a href="{{ route('sign-in/social','github') }}" type="button" class="btn btn-success">
+                                    @lang('user.login') Github
+                                </a>
+                                <a href="{{ route('sign-in/social','facebook') }}" type="button" class="btn btn-outline-primary">
+                                    @lang('user.login') Facebook
+                                </a>
+                                <a href="{{ route('sign-in/social','google') }}" type="button" class="btn btn-outline-danger">
+                                    @lang('user.login') Google
+                                </a>
                             </div>
                         </div>
                     </form>

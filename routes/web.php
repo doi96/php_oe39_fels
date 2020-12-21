@@ -17,6 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'localization'], function () {
     Route::group(['middleware' => 'auth'], function () {
         Route::get('/home', 'HomeController@index')->name('home');
+
+        Route::resource('profile', 'ProfileController')->only([
+            'index',
+            'edit',
+            'update',
+        ]);
+
+        Route::post('/updatepass','ProfileController@updatePasswordd')->name('update-password');
     });
     Route::get('/', function () {
         return view('welcome');

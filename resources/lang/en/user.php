@@ -45,5 +45,10 @@ return [
     'unlearned' => 'Unlearned',
     'word' => 'Word',
     'course' => 'Course',
-    'status' => 'Status'
+    'status' => 'Status',
+    'change_pass'=>'Change Password',
+    'old_password'=>'Old Password',
+    'male'=>'Male',
+    'female'=>'Female',
+    'gender'=>'Gender',
 ];

@@ -15,11 +15,14 @@ class WordsTableSeeder extends Seeder
     {
         $faker = Faker::create();
         $idCourse = count(DB::table('courses')->select('id')->get());
-        $limit = 5;
+        $limit = 100;
+        $imageSeed = $faker->word();
         for($i=0; $i < $limit; $i++) {
             DB::table('words')->insert([
                 'text'=>$faker->word(),
                 'course_id'=>random_int(1,$idCourse),
+                'definition' => $faker->sentence(),
+                'image_url' => "https://picsum.photos/seed/$imageSeed/300/300",
                 'created_at'=>new DateTime(),
                 'updated_at'=>new DateTime(),
             ]);

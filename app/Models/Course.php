@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class Course extends Model
 {
@@ -11,6 +12,10 @@ class Course extends Model
         'name',
         'image',
         'description',
+    ];
+    
+    protected $appends = [
+        'is_enrolled',
     ];
     
     public function users()
@@ -26,5 +31,18 @@ class Course extends Model
     public function words()
     {
         return $this->hasMany(Word::class, 'course_id', 'id');
+    }
+
+    public function getIsEnrolledAttribute()
+    {
+        $user = Auth::user();
+        $courseId = $this->id;
+        $result = User::where('id', $user->id)
+            ->whereHas('courses', function($q) use ($courseId){
+                $q->where('courses.id', $courseId);
+            })
+            ->exists();
+        
+        return !empty($result);
     }
 }

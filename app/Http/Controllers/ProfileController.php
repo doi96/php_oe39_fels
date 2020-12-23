@@ -69,7 +69,6 @@ class ProfileController extends Controller
         }
         $profile->avatar = $imageName;
         $user->push();
-
         return back()->with('success', trans('messages.front_end.profile.update_success'));
     }
 
